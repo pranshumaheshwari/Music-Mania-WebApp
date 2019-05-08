@@ -13,18 +13,18 @@ export default {
   name: 'login',
   computed: {
     user: {
-      get() {
-        return this.$store.state.user;
+      get () {
+        return this.$store.state.user
       },
-      set(newUser) {
-        this.$store.commit('changeUser', newUser);
+      set (newUser) {
+        this.$store.commit('changeUser', newUser)
       }
     }
   },
   methods: {
-    login() {
-      this.$router.push({ name: 'about' });
-    },
-  },
+    login () {
+      this.$router.push({ name: 'about' })
+    }
+  }
 }
 </script>
