@@ -23,7 +23,7 @@ export default {
     }
   },
   mounted () {
-    axios.get(`http://localhost:3000/userDetails?user=${this.$store.state.user}`)
+    axios.get(`https://music-mania-backend.herokuapp.com/userDetails?user=${this.$store.state.user}`)
       .then(res => res.data.user)
       .then(res => {
         this.name = res.realname
